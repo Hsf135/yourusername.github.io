@@ -1,0 +1,185 @@
+/*每个页面公共css */
+@import '@/uni_modules/uview-ui/index.scss';
+@import '@/uni_modules/uview-ui/libs/css/flex.scss';
+@import './common.scss';
+
+@font-face {
+	font-family: DingTalkJinBuTi; //字体
+	src: url('/static/font/DingTalkJinBuTi.ttf'); //包路径
+}
+
+@font-face {
+	font-family: Sthginkra; //字体
+	src: url('/static/font/Sthginkra.ttf'); //包路径
+}
+
+page {
+	color: $u-content-color;
+	font-size: 14px;
+	background: #faf9f7;
+}
+
+.zp-empty-view-center {
+	padding-top: 60px;
+	justify-content: inherit !important;
+}
+
+.zp-main-image-rpx {
+	width: 142px !important;
+	height: 120px !important;
+}
+
+.zp-main-title {
+	line-height: 16px !important;
+	margin-top: 24px !important;
+	color: #999693 !important;
+	text-align: center !important;
+}
+
+.u-form-item__body__right__message {
+	color: #e96848 !important;
+}
+
+.full-height {
+	height: 100%;
+}
+
+.items-top {
+	align-items: flex-start;
+}
+
+.fixed-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	background: $uni-bg-color;
+	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05);
+
+	&-bottom {
+		padding-bottom: 100px !important;
+	}
+}
+
+.ig-label {
+	padding: 0 8px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #65acff;
+	background: #eff7ff;
+	border-radius: 4px;
+
+	&.warning {
+		color: $u-primary;
+		background: #fff9f0;
+	}
+}
+
+.base-box {
+	margin: 12px 16px;
+	padding: 12px;
+	background: #fff;
+	border-radius: 8px;
+}
+
+.u-navbar__content__title {
+	font-weight: bold;
+}
+
+.u-cell__title-text {
+	font-size: 14px !important;
+}
+
+.u-form-item__body__left__content__label {
+	font-size: 14px !important;
+}
+
+.uni-input-placeholder {
+	font-size: 14px !important;
+}
+
+.uni-input-input {
+	font-size: 14px !important;
+}
+
+.u-button {
+	border-radius: 8px !important;
+}
+
+.form-required {
+	// /deep/ .u-form-item__body__left span {
+	// 	&::after {
+	// 		content: '*';
+	// 		color: #e91313;
+	// 		line-height: 20px;
+	// 		font-size: 20px;
+	// 		position: absolute;
+	// 		// top: 3px;
+	// 	}
+	// }
+
+	/deep/ .u-form-item__body__left__content__label {
+		&::after {
+			content: '*';
+			color: #e91313;
+			font-size: 20px;
+		}
+	}
+}
+
+.u-form-item__body {
+	min-height: 48px;
+	box-sizing: border-box;
+}
+
+.u-toolbar__wrapper__confirm {
+	color: $u-primary !important;
+}
+
+.unlive-info {
+	margin: 12px 16px;
+	color: #E96848;
+}
+
+.placeholder-color {
+	color: #c0c4cc;
+}
+
+.content-color {
+	color: #333231;
+}
+
+.pre-wrap {
+	white-space: pre-wrap;
+}
+
+/deep/ .u-textarea__count {
+	bottom: -10px !important;
+}
+
+.com-textarea {
+	width: 100%;
+	height: inherit;
+	border: none;
+	outline: none;
+	appearance: none;
+	font-size: 14px;
+}
+
+.min-textarea {
+	height: 80px;
+	padding-bottom: 20px;
+}
+
+.com-placeholder {
+	color: #c0c4cc;
+}
+
+.color-fff {
+	color: #fff;
+}
